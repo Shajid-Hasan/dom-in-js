@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quos iure itaque, optio ullam corporis quaerat odit eos cumque necessitatibus libero nam ducimus praesentium aliquam eaque incidunt non, porro perspiciatis?</p>
+    </header>
+    <main id="main-container">
+        <section>
+            <h1>Awesome DOM</h1>
+                <ul>
+                    <li>Jalali set</li>
+                    <li>Shafaet</li>
+                    <li>Bonobas</li>
+                    <li>DOm de re baba</li>
+                </ul>
+        </section>
+        <section>
+            <h1>jalali set</h1>
+                <ul>
+                    <li>bandorban</li>
+                    <li>katabon</li>
+                    <li>shalbon</li>
+                </ul>
+        </section>
+        <section id="fruits-container">
+            <h1 id="fruits-title">Fruits I like</h1>
+                <ul>
+                    <li class="fruits-name">banana</li>
+                    <li class="fruits-name">appel</li>
+                    <li class="fruits-name">carot</li>
+                </ul>
+        </section>
+        <section id="places-container">
+            <h1 id="places-title">place I like to visit</h1>
+                <ul id="places-list">
+                    <li class="important-places">sundarban</li>
+                    <li class="important-places">katabon</li>
+                    <li class="important-places">modhubon</li>
+                </ul>
+        </section>
+        
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/appned.js"></script>
+    <script src="js/stylein.js"></script>
+
+    <!-- <script>
+        // option-1 getElementByTagName
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            console.log(h1.innerText);
+        }
+
+        // option-2 getElementById
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'Fruits changed by js';
+
+        // option-3 getElementByClassName
+        const places = document.getElementsByClassName('important-place');
+        for(const place of places){
+            console.log(place.innerText);
+        }
+
+        // option-4 querySelectorAll
+        const someLi = document.querySelectorAll('#fruits-container li');
+        // console.log(someLi);
+        for(const li of someLi){
+            console.log(li.innerText);
+        }
+        // option-5 querrySelector
+    </script> -->
+    
+</body>
+</html>
